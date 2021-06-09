@@ -35,4 +35,4 @@ Cenário: Valor limite para saque
         Dado que eu tenho uma conta com 1000 reais
         Quando faço um saque no valor de 701 reais
         Então 1000 reais será o meu saldo final
-        E devo ver a seguinte mensagem "Valor máximo por transação deve ser de 700"
+        E devo ver a seguinte mensagem "Valor máximo por transação deve ser de 700!"
