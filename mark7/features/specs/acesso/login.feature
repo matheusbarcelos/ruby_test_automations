@@ -1,14 +1,14 @@
 #language: pt
 
 Funcionalidade: Login
-    Para que eu possa cadastrar e gerenciar minhas arefas
+    Para que eu possa cadastrar e gerenciar minhas tarefas
     Sendo um usuário
     Posso acessar o sistema com meu email e senha previamente cadastrados.
 
 Contexto: Home
     Dado que eu acesso o sistema
 
-@sprint1 @logout
+@logout
 Cenario: Usuário autenticado
 
     Quando faço login com "ma-the-us39@hotmail.com" e "teste123"
