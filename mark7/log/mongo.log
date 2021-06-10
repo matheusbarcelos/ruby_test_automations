@@ -1,0 +1,17 @@
+# Logfile created on 2021-06-10 16:14:08 -0300 by logger.rb/61378
+D, [2021-06-10T16:14:11.218003 #19320] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-06-10T16:14:11.218292 #19320] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-06-10T16:14:11.218484 #19320] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=127.0.0.1:27017 topology=Unknown>
+D, [2021-06-10T16:14:11.218588 #19320] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2021-06-10T16:14:11.262336 #19320] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-06-10T16:14:11.262532 #19320] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-06-10T16:14:11.262839 #19320] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-06-10T16:14:11.262933 #19320] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2021-06-10T16:14:11.263056 #19320] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-06-10T16:14:11.263174 #19320] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-06-10T16:14:11.263991 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"ma-the-us39@hotmail.com"}, "lsid"=>{"id"=><BSON::Binary:0x45743400 type=uuid data=0x79e2935f87aa4ccf...>}}
+D, [2021-06-10T16:14:11.293905 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.029s
+D, [2021-06-10T16:14:11.294623 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x45743400 type=uuid data=0x79e2935f87aa4ccf...>}, "deletes"=>[{"q"=>{"title"=>"Fazer Compras"}, "limit"=>0}]}
+D, [2021-06-10T16:14:11.309030 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.014s
+D, [2021-06-10T16:14:12.995645 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x45743400 type=uuid data=0x79e2935f87aa4ccf...>}]}
+D, [2021-06-10T16:14:13.016482 #19320] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.020s

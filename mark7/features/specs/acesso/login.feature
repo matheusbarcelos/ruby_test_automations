@@ -14,7 +14,7 @@ Cenario: Usuário autenticado
     Quando faço login com "ma-the-us39@hotmail.com" e "teste123"
     Então vejo a mensagem de boas vindas "Olá, Matheus"
 
-@tentativa
+@tentativa_login
 Esquema do Cenario: Tentativa de login
 
     Quando faço login com "<email>" e "<senha>"
