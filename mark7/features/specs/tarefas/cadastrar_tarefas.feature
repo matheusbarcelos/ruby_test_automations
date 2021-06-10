@@ -41,4 +41,5 @@ Cenario: Tarefa não pode ser duplicada
         Mas eu já cadastrei esta tarefa e esqueci
         Quando faço o cadastro desta tarefa
         Então devo ver a seguinte mensagem "Tarefa duplicada."
+        E devo ver somente 1 tarefa com o nome cadastrado
                
