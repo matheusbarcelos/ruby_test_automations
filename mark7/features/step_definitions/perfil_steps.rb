@@ -1,4 +1,4 @@
-Dado('que estou autenticado com {string} e {string}') do |email, senha|
+  Dado('que estou autenticado com {string} e {string}') do |email, senha|
     @login_page.acessa
     @login_page.logar(email, senha)
   end
@@ -7,10 +7,10 @@ Dado('que estou autenticado com {string} e {string}') do |email, senha|
    @side.acessa_perfil
   end
   
-  Quando('completo o meu cadastro') do
-    pending # Write code here that turns the phrase above into concrete actions
+  Quando("completo o meu cadastro com {string} e {string}") do |empresa, cargo|
+    @perfil_page.completa_cadastro(empresa,cargo)
   end
   
-  Então('devo ver a mensagem de atualização cadastral:') do |doc_string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Então('devo ver a mensagem de atualização cadastral:') do |mensagem|
+    expect(@perfil_page.alerta).to have_content mensagem
   end

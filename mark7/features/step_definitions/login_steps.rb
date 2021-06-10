@@ -1,5 +1,4 @@
-Dado('que eu acesso o sistema') do
-    @login_page = LoginPage.new 
+  Dado('que eu acesso o sistema') do
     @login_page.acessa
   end
   
