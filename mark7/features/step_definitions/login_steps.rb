@@ -1,11 +1,19 @@
 Dado('que eu acesso o sistema') do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit 'http://localhost:5000/login'  
   end
   
   Quando('faço login com {string} e {string}') do |email, senha|
-    pending # Write code here that turns the phrase above into concrete actions
+    find('#login_email').set email
+    find('input[name=password]').set senha
+    find('button[id*=btnLogin]').click
   end
   
-  Então('vejo a seguinte mensagem {string}') do |mensagem|
-    pending # Write code here that turns the phrase above into concrete actions
+  Então('vejo a mensagem de boas vindas {string}') do |mensagem|
+    painel_tarefas = find ('#task-board')
+    expect(painel_tarefas).to have_content mensagem
+  end
+ 
+  Então('vejo a mensagem de alerta {string}') do |mensagem|
+    alerta = find('.alert-login')
+    expect(alerta).to have_content mensagem
   end

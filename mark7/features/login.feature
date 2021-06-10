@@ -8,33 +8,24 @@ Funcionalidade: Login
 Contexto: Home
     Dado que eu acesso o sistema
 
-@sprint1
+@sprint1 @logout
 Cenario: Usuário autenticado
 
-    Quando faço login com "eu@papito.io" e "123456"
-    Então vejo a seguinte mensagem "Olá, Fernando"
+    Quando faço login com "ma-the-us39@hotmail.com" e "teste123"
+    Então vejo a mensagem de boas vindas "Olá, Matheus"
 
-@sprint1   
-Cenario: Senha incorreta
+@tentativa
+Esquema do Cenario: Tentativa de login
 
-    Quando faço login com "eu@papito.io" e "xpt"
-    Então vejo a seguinte mensagem "Senha inválida."
+    Quando faço login com "<email>" e "<senha>"
+    Então vejo a mensagem de alerta "<saida>."
 
-@sprint1
-Cenario: Usuário não cadastrado
+    Exemplos:
+    |email|senha|saida|
+    |ma-the-us39@hotmail.com|ma-the-us39@hotmail.com|Senha inválida|
+    |eu@papito404.io|123456|Usuário não cadastrado|
+    ||123456|Email incorreto ou ausente|
+    |eu@papito404.io||Senha ausente|
 
-    Quando faço login com "eu@papito404.io" e "123456"
-    Então vejo a seguinte mensagem "Usuário não cadastrado."
 
-@sprint2
-Cenario: Email deve ser obrigatório
-
-    Quando faço login sem informar o Email
-    Então vejo a mensagem "Email deve ser preenchido."
-
-@sprint2
-Cenario: Senha deve ser obrigatória
-
-    Quando faço login sem informar a senha
-    Então vejo a mensagem "Senha deve ser preenchida."
 
