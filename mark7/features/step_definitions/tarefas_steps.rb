@@ -7,7 +7,7 @@ Dado('a data de finalização será {string}') do |data_finalizacao|
     @data_tarefa = data_finalizacao
 end
   
-Dado('seja possível taguear esta tarefa com:') do |tags|
+Dado('seja possível taquear esta tarefa com:') do |tags|
     @tags = tags.hashes
 end
 

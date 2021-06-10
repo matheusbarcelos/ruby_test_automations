@@ -25,7 +25,7 @@ Cenario: Nova Tarefa
 
         Dado que o nome da tarefa é "<nome>"
         E a data de finalização será "<data>"
-        Quando efetuar cadastro desta tarefa
+        Quando realizar o cadastro desta tarefa
         Então deverá visualizar a seguinte mensagem "<mensagem>"
 
         Exemplos:
@@ -39,7 +39,7 @@ Cenario: Tarefa não pode ser duplicada
         Dado que o nome da tarefa é "Ler um livro de MongoDB"
         E a data de finalização será "22/08/2018"
         Mas a tarefa já foi cadastrada
-        Quando efetuar o cadastro desta tarefa
+        Quando realizar o cadastro desta tarefa
         Então deverá visualizar a seguinte mensagem "Tarefa duplicada."
         E deverá ver somente 1 tarefa com o nome cadastrado
                
