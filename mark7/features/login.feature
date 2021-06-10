@@ -21,11 +21,11 @@ Esquema do Cenario: Tentativa de login
     Então vejo a mensagem de alerta "<saida>."
 
     Exemplos:
-    |email|senha|saida|
-    |ma-the-us39@hotmail.com|ma-the-us39@hotmail.com|Senha inválida|
-    |eu@papito404.io|123456|Usuário não cadastrado|
-    ||123456|Email incorreto ou ausente|
-    |eu@papito404.io||Senha ausente|
+      |email|senha|saida|
+      |ma-the-us39@hotmail.com|ma-the-us39@hotmail.com|Senha inválida|
+      |eu@papito404.io|123456|Usuário não cadastrado|
+      ||123456|Email incorreto ou ausente|
+      |eu@papito404.io||Senha ausente|
 
 
 
