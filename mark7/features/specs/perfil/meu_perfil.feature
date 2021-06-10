@@ -1,17 +1,17 @@
 #language:pt
 
 Funcionalidade: Meu perfil
-    Para que eu possa manter meus dados atualizados
+    Para que seja possível manter os dados atualizados
     Sendo um usuário
-    Posso completar o meu cadastro do perfil
+    É possível completar o cadastro do perfil
     
     @logout
     Esquema do Cenário: Atualizar perfil
 
-    Dado que estou autenticado com "<email>" e "<senha>"
-    E acesso o meu perfil
-    Quando completo o meu cadastro com "<empresa>" e "<cargo>"
-    Então devo ver a mensagem de atualização cadastral:
+    Dado que esteja autenticado com "<email>" e "<senha>"
+    E acesse o perfil
+    Quando completar o cadastro com "<empresa>" e "<cargo>"
+    Então deverá ver a mensagem de atualização cadastral:
     """
     Perfil atualizado com sucesso.
     """

@@ -727,3 +727,67 @@ D, [2021-06-10T17:20:36.659520 #13124] DEBUG -- : MONGODB | 127.0.0.1:27017 | ad
 D, [2021-06-10T17:20:36.676123 #13124] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.016s
 D, [2021-06-10T17:20:36.678698 #13124] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x89139860 type=uuid data=0x8a94857824e94010...>}]}
 D, [2021-06-10T17:20:36.705323 #13124] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.026s
+D, [2021-06-10T17:49:40.629584 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-06-10T17:49:40.629904 #17476] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-06-10T17:49:40.630075 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=127.0.0.1:27017 topology=Unknown>
+D, [2021-06-10T17:49:40.630226 #17476] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2021-06-10T17:49:40.661451 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-06-10T17:49:40.661803 #17476] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-06-10T17:49:40.662052 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-06-10T17:49:40.662155 #17476] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2021-06-10T17:49:40.662356 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-06-10T17:49:40.662500 #17476] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-06-10T17:49:40.663667 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>{"email"=>"ma-the-us39@hotmail.com", "senha"=>"teste123"}}, "lsid"=>{"id"=><BSON::Binary:0x89077520 type=uuid data=0x41add44367804849...>}}
+D, [2021-06-10T17:49:40.692724 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.029s
+D, [2021-06-10T17:49:40.693396 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x89077520 type=uuid data=0x41add44367804849...>}, "deletes"=>[{"q"=>{"title"=>"Fazer Compras"}, "limit"=>0}]}
+D, [2021-06-10T17:49:40.708419 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.015s
+D, [2021-06-10T17:49:41.572917 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-06-10T17:49:41.573300 #17476] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-06-10T17:49:41.573474 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=127.0.0.1:27017 topology=Unknown>
+D, [2021-06-10T17:49:41.573567 #17476] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2021-06-10T17:49:41.603978 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-06-10T17:49:41.604137 #17476] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-06-10T17:49:41.604286 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-06-10T17:49:41.604427 #17476] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2021-06-10T17:49:41.604585 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-06-10T17:49:41.604689 #17476] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-06-10T17:49:41.605587 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>{"email"=>"ma-the-us39@hotmail.com", "senha"=>"teste123"}}, "lsid"=>{"id"=><BSON::Binary:0x75266820 type=uuid data=0xfa467274d02d4f39...>}}
+D, [2021-06-10T17:49:41.635438 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.030s
+D, [2021-06-10T17:49:41.636145 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x75266820 type=uuid data=0xfa467274d02d4f39...>}, "deletes"=>[{"q"=>{"title"=>"Ler"}, "limit"=>0}]}
+D, [2021-06-10T17:49:41.650817 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.015s
+D, [2021-06-10T17:49:42.360851 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-06-10T17:49:42.361089 #17476] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-06-10T17:49:42.361302 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=127.0.0.1:27017 topology=Unknown>
+D, [2021-06-10T17:49:42.361393 #17476] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2021-06-10T17:49:42.391650 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-06-10T17:49:42.391906 #17476] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-06-10T17:49:42.392056 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-06-10T17:49:42.392201 #17476] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2021-06-10T17:49:42.392362 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-06-10T17:49:42.392503 #17476] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-06-10T17:49:42.393241 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>{"email"=>"ma-the-us39@hotmail.com", "senha"=>"teste123"}}, "lsid"=>{"id"=><BSON::Binary:0x73111040 type=uuid data=0x07d7daf0f2a642d7...>}}
+D, [2021-06-10T17:49:42.422186 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.029s
+D, [2021-06-10T17:49:42.422743 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x73111040 type=uuid data=0x07d7daf0f2a642d7...>}, "deletes"=>[{"q"=>{"title"=>""}, "limit"=>0}]}
+D, [2021-06-10T17:49:42.438150 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.015s
+D, [2021-06-10T17:49:43.211651 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-06-10T17:49:43.211795 #17476] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-06-10T17:49:43.211948 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=127.0.0.1:27017 topology=Unknown>
+D, [2021-06-10T17:49:43.212094 #17476] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2021-06-10T17:49:43.241661 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-06-10T17:49:43.241855 #17476] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-06-10T17:49:43.241994 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-06-10T17:49:43.242170 #17476] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2021-06-10T17:49:43.242336 #17476] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-06-10T17:49:43.242442 #17476] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-06-10T17:49:43.243266 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>{"email"=>"ma-the-us39@hotmail.com", "senha"=>"teste123"}}, "lsid"=>{"id"=><BSON::Binary:0x70838100 type=uuid data=0x1aad31e35b0440a3...>}}
+D, [2021-06-10T17:49:43.272775 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.029s
+D, [2021-06-10T17:49:43.274965 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x70838100 type=uuid data=0x1aad31e35b0440a3...>}, "deletes"=>[{"q"=>{"title"=>"Ler um livro de MongoDB"}, "limit"=>0}]}
+D, [2021-06-10T17:49:43.287820 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.012s
+D, [2021-06-10T17:49:44.298158 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70838100 type=uuid data=0x1aad31e35b0440a3...>}]}
+D, [2021-06-10T17:49:44.318188 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.020s
+D, [2021-06-10T17:49:44.318685 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x73111040 type=uuid data=0x07d7daf0f2a642d7...>}]}
+D, [2021-06-10T17:49:44.334795 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.016s
+D, [2021-06-10T17:49:44.336850 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x75266820 type=uuid data=0xfa467274d02d4f39...>}]}
+D, [2021-06-10T17:49:44.365547 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.028s
+D, [2021-06-10T17:49:44.367681 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x89077520 type=uuid data=0x41add44367804849...>}]}
+D, [2021-06-10T17:49:44.396813 #17476] DEBUG -- : MONGODB | 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.029s

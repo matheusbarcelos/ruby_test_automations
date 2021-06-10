@@ -1,24 +1,24 @@
 #language: pt
 
 Funcionalidade: Login
-    Para que eu possa cadastrar e gerenciar minhas tarefas
+    Para que possa cadastrar e gerenciar tarefas
     Sendo um usuário
-    Posso acessar o sistema com meu email e senha previamente cadastrados.
+    Acessa o sistema com email e senha previamente cadastrados.
 
 Contexto: Home
-    Dado que eu acesso o sistema
+    Dado que acesse o sistema
 
 @logout
 Cenario: Usuário autenticado
 
-    Quando faço login com "ma-the-us39@hotmail.com" e "teste123"
-    Então vejo a mensagem de boas vindas "Olá, Matheus"
+    Quando realizar login com "ma-the-us39@hotmail.com" e "teste123"
+    Então deverá visualizar a mensagem de boas vindas "Olá, Matheus"
 
 @tentativa_login
 Esquema do Cenario: Tentativa de login
 
-    Quando faço login com "<email>" e "<senha>"
-    Então vejo a mensagem de alerta "<saida>."
+    Quando realizar login com "<email>" e "<senha>"
+    Então deverá visualizar a mensagem de alerta "<saida>."
 
     Exemplos:
       |email|senha|saida|
