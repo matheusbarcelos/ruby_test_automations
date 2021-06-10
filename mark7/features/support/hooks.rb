@@ -4,9 +4,7 @@ Before do
     @side = Sidebar.new
     @login_page = LoginPage.new
     @tarefas_page = TarefasPage.new
-    @perfil_page = PerfilPage.new
-
-    
+    @perfil_page = PerfilPage.new    
 end
 
 Before('@login') do
