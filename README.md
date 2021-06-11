@@ -7,5 +7,5 @@ Após clonar o projeto que se encontra nesse repositório, abrir o mesmo no ambi
 <h3>Executando os Testes</h3><p>
 Para executar os testes via linha de comando, acessar o repositória via linha de comando, executar o seguinte comando: <em> <p> cucumber <p></em>
  
-Será gerado um relatório de execução dos cenários dentro da pasta <em>reports/em> com o nome <em>features.html</em>
+Será gerado um relatório de execução dos cenários dentro da pasta  <em> reports /em> com o nome <em> features.html </em>
   
