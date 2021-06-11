@@ -1,0 +1,4 @@
+---
+default: --format html --out=reports/features.html
+
+##--format json --out=reports/cucumber.json
