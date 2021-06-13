@@ -1,15 +1,20 @@
-class Navbar
+class Navbar < SitePrism::Page
+
+      set_url '/'
+      element :dropdown, 'a[href*=dropdown]'
+      element :logout, 'a[href$=logout]'
+
       include Capybara::DSL
         def sair 
-        find('.navbar a[href*=dropdown]').click
-        find('.navbar a[href$=logout]').click
+        dropdown.click
+        logout.click
      end
 end
 
-class Sidebar
+class Sidebar < SitePrism::Page
       include Capybara::DSL
       def acessa_perfil
-      within('aside[class=navigation]') do
+        within('aside[class=navigation]') do
       click_link 'Perfil'
       end
     end

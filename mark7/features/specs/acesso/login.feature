@@ -26,6 +26,7 @@ Esquema do Cenario: Tentativa de login
       |eu@papito404.io|123456|Usuário não cadastrado|
       ||123456|Email incorreto ou ausente|
       |eu@papito404.io||Senha ausente|
+      
 
 
 

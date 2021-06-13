@@ -1,20 +1,5 @@
 require 'report_builder'
 
-# at_exit do
-
-#   ReportBuilder.input_path = "reports/cucumber.json"
-
-#   ReportBuilder.configure do |config|
-#      config.report_path = "reports/run"
-#      config.report_types = [:json, :html]
-     
-#      @options = {
-#      report_title: "Automacao QA"
-#       }
-#     end
-#     ReportBuilder.build_report @options
-#   end
- 
 Before do
     @nav = Navbar.new
     @side = Sidebar.new

@@ -1,5 +1,10 @@
-class LoginPage 
+class LoginPage < SitePrism::Page
     include Capybara::DSL
+
+    set_url '/login'
+    element :cmp_login, '#login_email'
+    element :cmp_senha, 'input[name=password]'
+    element :btn_login, 'button[id*=btnLogin]'
 
     def acessa
         visit '/login'
@@ -10,8 +15,8 @@ class LoginPage
     end
 
     def logar(email, senha)
-        find('#login_email').set email
-        find('input[name=password]').set senha
-        find('button[id*=btnLogin]').click 
+        cmp_login.set email
+        cmp_senha.set senha
+        btn_login.click
     end
 end

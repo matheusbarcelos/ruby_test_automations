@@ -1,4 +1,4 @@
-class TarefasPage
+class TarefasPage < SitePrism::Page
     include Capybara::DSL
 
     def painel
