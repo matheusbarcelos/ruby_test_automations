@@ -5,7 +5,7 @@ Funcionalidade: Meu perfil
     Sendo um usuário
     É possível completar o cadastro do perfil
     
-    @logout
+   @sprint @logout
     Esquema do Cenário: Atualizar perfil
 
     Dado que esteja autenticado com "<email>" e "<senha>"

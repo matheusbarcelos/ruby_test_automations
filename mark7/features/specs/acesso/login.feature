@@ -8,13 +8,13 @@ Funcionalidade: Login
 Contexto: Home
     Dado que acesse o sistema
 
-@logout
+@sprint @logout
 Cenario: Usuário autenticado
 
     Quando realizar login com "ma-the-us39@hotmail.com" e "teste123"
     Então deverá visualizar a mensagem de boas vindas "Olá, Matheus"
 
-@tentativa_login
+
 Esquema do Cenario: Tentativa de login
 
     Quando realizar login com "<email>" e "<senha>"

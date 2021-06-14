@@ -5,7 +5,7 @@ Funcionalidade: Cadastro de tarefas
     Sendo um usuário cadastrado
     É possível adicionar novas tarefas no meu Painel
 
-@smoke @login @logout
+@sprint @login @logout
 Cenario: Nova Tarefa
         
         Dado que o nome da tarefa é "Fazer Compras"
@@ -20,7 +20,7 @@ Cenario: Nova Tarefa
         Quando realizar o cadastro desta tarefa
         Então deverá ver esta tarefa no painel com o status "Em andamento"
 
- @tentativa @login @logout
+@sprint @login @logout
  Esquema do Cenario: Tentar cadastrar
 
         Dado que o nome da tarefa é "<nome>"
@@ -33,7 +33,7 @@ Cenario: Nova Tarefa
          | Ler   |  21/08/2018 | 10 caracteres é o mínimo permitido. | 
          |       |  21/08/2018 | Nome é obrigatório.                 |      
 
-@login @logout @dup 
+@sprint @login @logout 
 Cenario: Tarefa não pode ser duplicada
 
         Dado que o nome da tarefa é "Ler um livro de MongoDB"

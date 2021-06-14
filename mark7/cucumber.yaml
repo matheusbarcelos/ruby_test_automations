@@ -1,0 +1,9 @@
+---
+default: -t @sprint --format json --out=reports/cucumber.json
+
+
+##--format json --out=reports/cucumber.json
+
+##--format html --out=reports/features.html
+
+##--format json --out=reports/cucumber_json
